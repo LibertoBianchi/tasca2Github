@@ -12,9 +12,6 @@ public class Tauler {
         this.paraulaSecreta = paraulaSecreta;
     }
 
-
-
-
     public int getIntents() {
         return intents;
     }
@@ -24,6 +21,14 @@ public class Tauler {
     }
 
     public void inicialitzarPartida(String paraula, int i) {
+        paraulaSecreta =new char[paraula.length()];
+        // recorrer con un for paraula, de cada [0, 1, 2...] guardarlo dentro del char de palabra secreta
+        for (int j = 0; j < paraula.length() ; j++) {
+            paraulaSecreta[j] = paraula.charAt(j); //metodo charAt coje caracter por posicion
+            System.out.println(paraulaSecreta[j]);
+        };
+        //forma facil: this.setParaulaSecreta(paraula.toCharArray());
+
         setIntents(i);
     }
 

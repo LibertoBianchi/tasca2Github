@@ -25,12 +25,12 @@ class TaulerTest {
         assertArrayEquals(new char[]{'p', 'a', 'r', 'a', 'u', 'l', 'a'}, this.tauler.getParaulaSecreta());
     }
 
-
+/*
     @Test
     void verificarEntradaIncorrecte() {
         assertEquals("Lletra incorrecte",this.tauler.verificar("ll"));
     }
-    /*
+
     @Test
     void verificarEntradaCorrecteEncertat() {
         this.tauler.verificar("a");
