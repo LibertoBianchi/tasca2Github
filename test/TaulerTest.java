@@ -30,13 +30,13 @@ class TaulerTest {
     void verificarEntradaIncorrecte() {
         assertEquals("Lletra incorrecte",this.tauler.verificar("ll"));
     }
-    /*
+
     @Test
     void verificarEntradaCorrecteEncertat() {
         this.tauler.verificar("a");
         assertArrayEquals(new String[]{ null,"a",null,"a",null,null,"a" },this.tauler.getPalabraEndevinada());
     }
-
+/*
     @Test
     void verificarEntradaCorrecteErrada() {
         this.tauler.verificar("n");
