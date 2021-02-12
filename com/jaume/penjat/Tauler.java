@@ -35,15 +35,30 @@ public class Tauler {
         for (int j = 0; j < paraula.length() ; j++) {
             paraulaSecreta[j] = paraula.charAt(j); //metodo charAt coje caracter por posicion
             System.out.println(paraulaSecreta[j]);
+
         };
         //forma facil: this.setParaulaSecreta(paraula.toCharArray());
+        //PalabraEndevinada
+        setPalabraEndevinada(new String[paraula.length()]); //mismas posicines que paraula, inicializado para toda la clase
 
         setIntents(i);
     }
     public String verificar(String lletra) {
         if (lletra.length() > 1) {
-    return "Lletra incorrecte";
+            return "Lletra incorrecte";
         }
+        boolean fallo = true;       // necesario para restar un intento y que no te rese por caracter incorrecto
+
+        for (int i = 0; i < paraulaSecreta.length; i++) {
+                if (Character.toString(paraulaSecreta[i]).equals(lletra)) {   //pasar paraulaSecreta a String para que lo reconozca equals
+                        palabraEndevinada[i] = lletra;
+                        fallo = false;                                         //pongo un primer estado boolean de referencia a cuando acierta
+                };
+        }
+        if (fallo){
+            intents--;                                                         //resto 1 intento al ser el caso contrario
+        }
+
         return "";
     }
 

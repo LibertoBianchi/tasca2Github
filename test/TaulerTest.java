@@ -36,13 +36,13 @@ class TaulerTest {
         this.tauler.verificar("a");
         assertArrayEquals(new String[]{ null,"a",null,"a",null,null,"a" },this.tauler.getPalabraEndevinada());
     }
-/*
+
     @Test
     void verificarEntradaCorrecteErrada() {
         this.tauler.verificar("n");
         assertEquals(3,this.tauler.getIntents());
     }
-
+/*
     @Test
     void imprimirCapEncert() {
         assertEquals("_______", this.tauler.imprimir());
