@@ -3,7 +3,15 @@ package com.jaume.penjat;
 public class Tauler {
     private int intents;
     private char[] paraulaSecreta;
-    public String lletra;
+    private String[] palabraEndevinada;
+
+    public String[] getPalabraEndevinada() {
+        return palabraEndevinada;
+    }
+
+    public void setPalabraEndevinada(String[] palabraEndevinada) {
+        this.palabraEndevinada = palabraEndevinada;
+    }
 
     public char[] getParaulaSecreta() {
         return paraulaSecreta;
