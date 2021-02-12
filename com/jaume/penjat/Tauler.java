@@ -58,9 +58,20 @@ public class Tauler {
         if (fallo){
             intents--;                                                         //resto 1 intento al ser el caso contrario
         }
-
         return "";
     }
+    public String imprimir(){
+       String contiene = "";
+        for (int i = 0; i < palabraEndevinada.length; i++) {
+            //if (palabraEndevinada[i].equals("")){}
+            if(palabraEndevinada[i] == null) {
+                contiene += "_";
+            }else{
+                contiene += palabraEndevinada[i];
+            }
+        }return contiene;
+    };
 
+    //public int imprimirVides(){}
 
 }

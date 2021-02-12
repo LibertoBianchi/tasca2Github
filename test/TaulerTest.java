@@ -42,7 +42,7 @@ class TaulerTest {
         this.tauler.verificar("n");
         assertEquals(3,this.tauler.getIntents());
     }
-/*
+
     @Test
     void imprimirCapEncert() {
         assertEquals("_______", this.tauler.imprimir());
@@ -65,7 +65,7 @@ class TaulerTest {
     }
 
 
-
+/*
     @Test
     void imprimirVidesPlural() {
         assertEquals("Et queden 4 vides de 4", this.tauler.imprimirVides());
